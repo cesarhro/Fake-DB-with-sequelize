@@ -2,7 +2,7 @@
 const Sequelize = require('sequelize')
 
 module.exports = (sequelize, DataTypes) => {
-    const Line_Type = sequelize.define('Line_Type', {
+    const Line_Types = sequelize.define('Line_Types', {
         id:{
             field: 'id',
             type: Sequelize.INTEGER,
@@ -15,12 +15,12 @@ module.exports = (sequelize, DataTypes) => {
         }    
     },
     {
-        tablename: 'Line_Type'
+        tablename: 'Line_Types'
     })
     
-    /* Line_Type.associate = function (models) {
+    /* Line_Types.associate = function (models) {
         //fazer os imports aqui
     } */
 
-    return Line_Type
+    return Line_Types
 }
