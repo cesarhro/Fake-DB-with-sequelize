@@ -12,6 +12,11 @@ module.exports = (sequelize, DataTypes) => {
             field: 'department',
             type: Sequelize.STRING(30),
             allowNull: false
+        },
+        characters:{
+            field: 'characters',
+            type: Sequelize.INTEGER,
+            allowNull: false
         }    
     },
     {
