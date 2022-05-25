@@ -43,19 +43,14 @@ module.exports = (sequelize, DataTypes) => {
             type: Sequelize.STRING(150),
             allowNull: false
         },
-        hire_date:{
-            field: 'hire_date',
+        created_at:{
+            field: 'created_at',
             type: Sequelize.DATE,
             allowNull: false
         },
-        exit_date:{
-            field: 'exit_date',
+        updated_at:{
+            field: 'updated_at',
             type: Sequelize.DATE,
-            allowNull: false
-        },
-        status:{
-            field: 'status',
-            type: Sequelize.ENUM('active', 'fired'),
             allowNull: false
         }
     },
@@ -64,7 +59,7 @@ module.exports = (sequelize, DataTypes) => {
         tablename: 'Addresses'
     })
     
-    /* Line_Type.associate = function (models) {
+    /* Addresses.associate = function (models) {
         //fazer os imports aqui
     } */
 
