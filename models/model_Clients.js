@@ -42,7 +42,7 @@ module.exports = (sequelize, DataTypes) => {
             field: 'phone',
             type: Sequelize.BIGINT,
             allowNull: false
-        },
+        }
     },
     {
         timestamps: false,
