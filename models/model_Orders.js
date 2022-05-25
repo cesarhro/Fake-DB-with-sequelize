@@ -13,14 +13,9 @@ module.exports = (sequelize, DataTypes) => {
             type: Sequelize.INTEGER,
             allowNull: false
         },
-        service_id:{
-            field: 'service_id',
-            type: Sequelize.INTEGER,
-            allowNull: false
-        },
-        line_id:{
-            field: 'line_id',
-            type: Sequelize.INTEGER,
+        service:{
+            field: 'service',
+            type: Sequelize.ENUM('remodeling','coating','recovery', 'confection'),
             allowNull: false
         },
         description:{

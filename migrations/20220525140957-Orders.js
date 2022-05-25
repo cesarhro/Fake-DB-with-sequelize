@@ -11,12 +11,8 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false
       },
-      service_id:{
-        type: Sequelize.INTEGER,
-        allowNull: false
-      },
-      line_id:{
-        type: Sequelize.INTEGER,
+      service_:{
+        type: Sequelize.ENUM('remodeling','coating','recovery', 'confection'),
         allowNull: false
       },
       description:{
