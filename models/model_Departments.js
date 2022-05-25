@@ -2,25 +2,25 @@
 const Sequelize = require('sequelize')
 
 module.exports = (sequelize, DataTypes) => {
-    const Departament_Types = sequelize.define('Departament_Types', {
+    const Departments = sequelize.define('Departments', {
         id:{
             field: 'id',
             type: Sequelize.INTEGER,
             primaryKey: true
         },
         departament:{
-            field: 'departamet',
+            field: 'department',
             type: Sequelize.STRING(30),
             allowNull: false
         }    
     },
     {
-        tablename: 'Departament_Types'
+        tablename: 'Departments'
     })
     
-    /* Line_Type.associate = function (models) {
+    /* Departments.associate = function (models) {
         //fazer os imports aqui
     } */
 
-    return Departament_Types
+    return Departments
 }
