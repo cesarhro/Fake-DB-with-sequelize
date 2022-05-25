@@ -18,8 +18,8 @@ module.exports = (sequelize, DataTypes) => {
             type: Sequelize.INTEGER,
             allowNull: false
         },
-        dept_id:{
-            field: 'dept_id',
+        department_id:{
+            field: 'department_id',
             type: Sequelize.INTEGER,
             allowNull: false
         },
