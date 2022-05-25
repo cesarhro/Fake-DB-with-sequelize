@@ -12,7 +12,12 @@ module.exports = (sequelize, DataTypes) => {
             field: 'service',
             type: Sequelize.STRING(50),
             allowNull: false
-        }    
+        },
+        line_id:{
+            field: 'line_id',
+            type: Sequelize.INTEGER,
+            allowNull: false
+        }
     },
     {
         tablename: 'Service_Types'
