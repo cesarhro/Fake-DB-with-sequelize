@@ -32,7 +32,7 @@ module.exports = {
         allowNull: false
       },  
       payment_id:{
-        type: Sequelize.UUIDV4,
+        type: Sequelize.UUID,
         allowNull: false
       },
       status:{
