@@ -46,7 +46,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
         timestamps: false,
-        tablename: 'Payment'
+        tablename: 'Payments'
     })
     
     /* Payments.associate = function (models) {
