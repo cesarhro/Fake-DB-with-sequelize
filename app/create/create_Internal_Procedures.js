@@ -3,14 +3,14 @@ const moment = require('moment')
 
 function tests_Id(id){
     if(!id){
-        throw("id é obrigatório")
+        return 'id é obrigatório'
     }
 
     const verifyUUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$/i
     const testUUID = verifyUUID.test(id)
 
     if(testUUID = false){
-        throw("id precisar ser UUID")
+        return 'id precisar ser UUID'
     }
 }
 
