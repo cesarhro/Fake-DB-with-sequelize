@@ -18,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
             type: Sequelize.BIGINT,
             allowNull: false
         },
+        
         client_id:{
             field: 'client_id',
             type: Sequelize.INTEGER,
@@ -32,6 +33,11 @@ module.exports = (sequelize, DataTypes) => {
             field: 'status',
             type: Sequelize.ENUM('in process','accepted','denied'), 
             allowNull: false
+        },
+        transaction_id: {
+            field: 'transaction_id',
+            type: Sequelize.UUID,
+            allowNull: true
         },
         created_at:{
             field: 'created_at',

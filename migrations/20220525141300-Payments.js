@@ -27,6 +27,10 @@ module.exports = {
         type: Sequelize.ENUM('in process','accepted','denied'), 
         allowNull: false
       },
+      transaction_id: {
+        type: Sequelize.UUID,
+        allowNull: true
+      },
       created_at:{
         type: Sequelize.DATE,
         allowNull: false
