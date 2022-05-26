@@ -3,8 +3,10 @@
     "cep-callback": "^1.0.0",
     "dotenv": "^16.0.1",
     "faker-br": "^0.4.1",
+    "moment": "^2.29.3",
     "mysql2": "^2.3.3",
     "randm": "^1.2.1",
-    "sequelize": "^6.20.0"
+    "sequelize": "^6.20.0",
+    "uuid": "^8.3.2"
   }
 }
