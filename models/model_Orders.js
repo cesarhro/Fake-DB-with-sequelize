@@ -5,16 +5,17 @@ module.exports = (sequelize, DataTypes) => {
     const Orders = sequelize.define('Orders', {
         id:{
             field: 'id',
-            type: Sequelize.UUIDV4,
-            primaryKey: true
+            type: Sequelize.INTEGER,
+            primaryKey: true,
+            autoIncremente: true
         },
         client_id:{
             field: 'client_id',
             type: Sequelize.INTEGER,
             allowNull: false
         },
-        service:{
-            field: 'service',
+        service_:{
+            field: 'service_',
             type: Sequelize.ENUM('remodeling','coating','recovery', 'confection'),
             allowNull: false
         },

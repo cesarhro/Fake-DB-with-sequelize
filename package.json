@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "cep-callback": "^1.0.0",
+    "cep-promise": "^4.1.2",
+    "correios-brasil": "^2.2.2",
     "dotenv": "^16.0.1",
     "faker-br": "^0.4.1",
     "moment": "^2.29.3",
